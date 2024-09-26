@@ -6,10 +6,13 @@ public class PemilihanBilangan01 {
     System.out.print("masukkan sebuah angka: ");
     int angka = sc.nextInt();
 
-    if (angka % 2 == 0){
-        System.out.println("Angka " + angka + " termasuk bilangan genap");
-    }else{
-        System.out.println("Angka " + angka + " termasuk bilangan ganjil");
-    }
-}
+    //if (angka % 2 == 0){
+    //    System.out.println("Angka " + angka + " termasuk bilangan genap");
+   // }else{
+   //     System.out.println("Angka " + angka + " termasuk bilangan ganjil");
+    //} 
+    
+    String hasil = angka % 2 == 0? " termasuk bilangan genap":" termasuk bilangan ganjil";
+    System.out.println("Angka " + angka + hasil);
+ }
 }
