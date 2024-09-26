@@ -42,6 +42,9 @@ public class Kafe01 {
         case 'L' :
             totalHarga += 0.4 * totalHarga;
             break;
+        default:
+        System.out.println("Maaff size yang anda pilih tidak tersedia");
+        return;
     }
 
     double diskon = keanggotaan ? 0.1 : 0;
